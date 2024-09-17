@@ -4,7 +4,7 @@
     <script>  
         function loadDoc(){
             const xhttp = new XMLHttpRequest();
-            xhhtp.onload = function(){
+            xhttp.onload = function(){
                 document.getElementById("demo").innerHTML = this.responseText;
             }
             xhttp.open("GET", "velha_raposa.txt", true);
