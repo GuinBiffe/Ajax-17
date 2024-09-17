@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script>  
+        function loadDoc(){
+            const xhttp = XMLHttpRequest();
+            xhhtp.onload = function(){
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "velha_raposa.txt")
+            xhttp.send();
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
